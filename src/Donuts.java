@@ -16,12 +16,21 @@ public class Donuts {
     //method-special
     //dont say void
     // has to match exactly the name of the class
-    public Donuts(){
+    public Donuts(int pNumberOfDunuts){
         //we give the instance varaibable there values.
         frostingType="boston Creme";
         hasFilling=true;
-        numberOfDonuts=3;
+        numberOfDonuts=pNumberOfDunuts;
 
-    }
+    }//end of donut constructor
 
-}
+    //todo:make a method called printinfo
+
+public void printinfo(){
+    System.out.println("The number of dunuts is " + numberOfDonuts);
+    System.out.println(" It is " + hasFilling + " that the donuts have filling");
+    System.out.println("The frosting type of the donut is " + frostingType);
+
+};
+
+}//end of donuts class
